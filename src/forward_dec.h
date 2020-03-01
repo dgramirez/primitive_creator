@@ -5,8 +5,8 @@
 
 #include <vector>
 #include <unordered_map>
-#include "glm/glm.hpp"
-#include "glm/gtx/hash.hpp"
+#include "../dep/glm/glm.hpp"
+#include "../dep/glm/gtx/hash.hpp"
 
 //This is Boost's Hash Combine Function! Credit to them!
 static void hash_combine(size_t& seed, const size_t& v)

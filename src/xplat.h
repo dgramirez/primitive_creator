@@ -7,7 +7,7 @@
 	}
 
 	void _fopen(FILE** _stream, const char* _filename, const char* _mode) {
-		fopen_s(&_stream, _filename, _mode);
+		fopen_s(_stream, _filename, _mode);
 	}
 
 	void _fread(void* _ptr, const size_t& _bytesPerElement, const size_t& _elementSize, FILE* _stream) {
