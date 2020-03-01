@@ -23,8 +23,18 @@ Here is the following Primitives I have:
 Inside "main()" function, the first function should be the "CreateXXXXXX". Replace that with the shape you need. Build and Run.
   - Did i mention this was awful? Will fix this in an official 1.0 release.
   - \_degreeFactor determines how much LESS divisions you want. the formula is: \_PI/180 * \_degreeFactor. To be safe, use whatever is divisible by 360 and no higher than 90 for most cases.
-  - Lastly, \_degreeFactor does the subdivisions for both theta and phi. This will be fixed also when i do a 1.0 release.
+  - Lastly, \_degreeFactor does the subdivisions for both theta and phi. This will be fixed also when i do a 1.0 release.  
   
+Once Build and run, there should be a "shape.bin" file that shows up next to your executable (or project solution). Rename it and put it in your project.
+
+## Layout:
+struct InVertex {  
+    float position[4];  
+    float normal[4];  
+}  
+
+As for Why I chose a vec4, it is because a demo I contributed to uses a math library that takes a vec4. 
+
 ## Questions?
 E-mail me at dgramirez@protonmail.com, or just tell me how awful for uploading this on github lol.  
 For those who want to know when a Version 1.0 will come, it will not be a quick thing. This will more than likely be a project that I come to whenever I need a break from my real project.
